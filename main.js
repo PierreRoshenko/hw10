@@ -38,6 +38,7 @@ function newSqueres() {
 let abort = false
 
 function dynamicSqures() {
+    
     abort = false
     setInterval(() => {
         if (abort == true) {
@@ -56,4 +57,3 @@ function stopDynamicSqures() {
     abort = true
 }
 
-squeres()
