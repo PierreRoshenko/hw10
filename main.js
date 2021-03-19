@@ -30,6 +30,7 @@ function squeres() {
     }
 }
 
+
 function newSqueres() {
     if (!document.querySelector('.template')) {
         squeres();
