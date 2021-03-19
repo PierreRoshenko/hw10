@@ -31,6 +31,9 @@ function squeres() {
 }
 
 function newSqueres() {
+    if (!document.querySelector('.template')) {
+        squeres();
+    }
     document.querySelector('.template').remove();
     squeres()
 }
@@ -38,7 +41,7 @@ function newSqueres() {
 let abort = false
 
 function dynamicSqures() {
-    
+
     abort = false
     setInterval(() => {
         if (abort == true) {
@@ -56,4 +59,3 @@ function dynamicSqures() {
 function stopDynamicSqures() {
     abort = true
 }
-
